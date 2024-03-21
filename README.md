@@ -1,5 +1,7 @@
 <<<<<<< HEAD
 # Project_Mindmap
+1. Clone Project
+2. Install node modules by runnig npm install.
 =======
 # Mindmap
 
