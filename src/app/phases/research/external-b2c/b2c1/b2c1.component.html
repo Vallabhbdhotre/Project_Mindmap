@@ -1,0 +1,27 @@
+<div class="Inner_container">
+  <h3 style="margin-bottom: 1rem; text-transform: uppercase">
+    B2C1 Sub-phases
+  </h3>
+  <div class="Sub_phaseitems">
+    <a
+      class="phaseitem"
+      (mouseover)="showInfo('online')"
+      (mouseout)="hideinfo()"
+      routerLink="online"
+      >Online</a
+    >
+    <!-- <div class="componentInfo" *ngIf="displaystatus">
+      <h4>{{ componentInfo.name }}</h4>
+      <h4>{{componentInfo.description}}</h4>
+    </div> -->
+    <a style="position: relative;" class="phaseitem" (mouseover)="showInfo('interview')" (mouseout)="hideinfo()" routerLink="interview">Interview</a>
+    <a class="phaseitem" (mouseover)="showInfo('public_data')" (mouseout)="hideinfo()" routerLink="public_data">Public Data</a>
+    <a class="phaseitem" (mouseover)="showInfo('health')" (mouseout)="hideinfo()" routerLink="health">Health</a>
+  </div>
+   <div>
+    <app-tooltip [content]="componentInfo" *ngIf="displaystatus"></app-tooltip>
+   </div>
+  <div class="inner_Rbody3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

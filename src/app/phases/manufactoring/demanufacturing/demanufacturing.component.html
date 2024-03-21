@@ -1,0 +1,16 @@
+<div class="rcontainer">
+  <div class="backbutton">
+    <button (click)="onclick()" class="button">Back</button>
+    </div>
+  <div class="rphase">
+    <header class="header">manufacturing</header>
+    <h2 style="text-align: center; margin-bottom: 10px;text-transform: uppercase;">Manufacturing Sub-Phases</h2>
+    <div class="phaseitems">
+        <a class="phaseitem" routerLink="material">Material</a>
+        <a class="phaseitem" routerLink="production">Production</a>
+    </div>
+  </div>
+  <div class="Rbody">
+    <router-outlet></router-outlet>
+  </div>
+</div>
